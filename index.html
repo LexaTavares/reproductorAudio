@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reproductor de Musica</title>
+  </head>
+  <body>
+    <button id="play" onclick="empiezaMusica();">play</button>
+    <button id="pausa" onclick="pausar();">pausa</button>
+    <button id="parar" onclick="parar();">stop</button>
+    <button id="avanzar" onclick="avanzar();">avanza</button>
+    <button id="retroceder" onclick="retroceder();">retroceder</button>
+    <br>
+    <label for="volumen">volumen</label>
+    <input onchange="volmas()" type="range" min="0" max="1" value="0.5" step="0.1" id="volumen"></input>
+    <br>
+    <br>
+    <label for="avance">avance</label>
+    <input onchange="barraAudio(event)" type="range" id="barra"></input>
+    <br>
+    <audio id="musica">
+      <source src="C:\Users\Ariel\Desktop\Leccion15_audio\assets\musica.mp3"></source>
+    </audio>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
